@@ -1,0 +1,8 @@
+{% for detail in user %}
+    <p>{{detail.name}}</p>
+        <ul>
+            {% for photo in photos %}
+                <li>{{photo.path}} {{photo.date}} {{ photo.images}}</li>
+            {% endfor %}
+        </ul>
+{% endfor %}
