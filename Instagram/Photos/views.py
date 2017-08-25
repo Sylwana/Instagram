@@ -18,3 +18,4 @@ class PhotoListView(View):
         photos = Photo.objects.all()
         return request('photo_list.html', {'user': user,
                                            'photos': photos})
+
